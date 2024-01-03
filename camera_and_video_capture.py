@@ -10,6 +10,7 @@ def open_frame():
 
     image = np.zeros(frame.shape, np.uint8); #Return an array
 
+    # Display the resulting frame
     cv2.imshow('frame', image);
     if(cv2.waitKey(1) & 0xFF == ord('q')):  #press q to quit frame
       break;                                                                                
